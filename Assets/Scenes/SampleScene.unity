@@ -396,9 +396,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 774462254}
   serializedVersion: 5
-  m_Mass: 50
+  m_Mass: 1300
   m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_AngularDamping: 2
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -412,7 +412,7 @@ Rigidbody:
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!65 &774462258
@@ -436,6 +436,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.605118, y: 1.6417397, z: 4.6573215}
   m_Center: {x: -0.002311802, y: 0.7185818, z: -0.10788708}
+--- !u!114 &774462259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774462254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 622834f8291e50749877d971d1ac92aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CarController
+  accel: 12
+  maxSpeed: 25
+  turnSpeed: 120
+  brake: 20
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -683,6 +699,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e34f5712b06e2b946b4f8f48b4cde049, type: 3}
       insertIndex: -1
       addedObject: {fileID: 774462258}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e34f5712b06e2b946b4f8f48b4cde049, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 774462259}
   m_SourcePrefab: {fileID: 100100000, guid: e34f5712b06e2b946b4f8f48b4cde049, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

@@ -25,7 +25,7 @@ RenderSettings:
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 0
-  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SubtractiveShadowColor: {r: 0.42773226, g: 0.45085537, b: 0.509434, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
@@ -93,8 +93,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 20201, guid: 0000000000000000f000000000000000, type: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: cec8a0da1f73dd74daf743f3a68ed501, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: eb10336fa6f67ba4b86dce14c21ec20e, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -163,8 +163,8 @@ WheelCollider:
   m_Center: {x: 0, y: 0, z: 0}
   m_Radius: 0.5
   m_SuspensionSpring:
-    spring: 35000
-    damper: 4500
+    spring: 40000
+    damper: 5000
     targetPosition: 0.5
   m_SuspensionDistance: 0.3
   m_ForceAppPointDistance: 0
@@ -177,11 +177,11 @@ WheelCollider:
     m_AsymptoteValue: 0.5
     m_Stiffness: 1
   m_SidewaysFriction:
-    m_ExtremumSlip: 0.2
-    m_ExtremumValue: 1
-    m_AsymptoteSlip: 0.5
-    m_AsymptoteValue: 0.75
-    m_Stiffness: 1
+    m_ExtremumSlip: 1
+    m_ExtremumValue: 2
+    m_AsymptoteSlip: 1
+    m_AsymptoteValue: 1
+    m_Stiffness: 2
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -499,8 +499,8 @@ WheelCollider:
   m_Center: {x: 0, y: 0, z: 0}
   m_Radius: 0.5
   m_SuspensionSpring:
-    spring: 35000
-    damper: 4500
+    spring: 40000
+    damper: 5000
     targetPosition: 0.5
   m_SuspensionDistance: 0.3
   m_ForceAppPointDistance: 0
@@ -513,11 +513,11 @@ WheelCollider:
     m_AsymptoteValue: 0.5
     m_Stiffness: 1
   m_SidewaysFriction:
-    m_ExtremumSlip: 0.2
-    m_ExtremumValue: 1
-    m_AsymptoteSlip: 0.5
-    m_AsymptoteValue: 0.75
-    m_Stiffness: 1
+    m_ExtremumSlip: 1
+    m_ExtremumValue: 2
+    m_AsymptoteSlip: 1
+    m_AsymptoteValue: 1
+    m_Stiffness: 2
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -571,8 +571,8 @@ WheelCollider:
   m_Center: {x: 0, y: 0, z: 0}
   m_Radius: 0.5
   m_SuspensionSpring:
-    spring: 35000
-    damper: 4500
+    spring: 40000
+    damper: 5000
     targetPosition: 0.5
   m_SuspensionDistance: 0.3
   m_ForceAppPointDistance: 0
@@ -585,11 +585,11 @@ WheelCollider:
     m_AsymptoteValue: 0.5
     m_Stiffness: 1
   m_SidewaysFriction:
-    m_ExtremumSlip: 0.2
-    m_ExtremumValue: 1
-    m_AsymptoteSlip: 0.5
-    m_AsymptoteValue: 0.75
-    m_Stiffness: 1
+    m_ExtremumSlip: 1
+    m_ExtremumValue: 2
+    m_AsymptoteSlip: 1
+    m_AsymptoteValue: 1
+    m_Stiffness: 2
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -599,6 +599,63 @@ WheelCollider:
   m_LayerOverridePriority: 0
   m_Enabled: 1
   m_ProvidesContacts: 0
+--- !u!1001 &784348342
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1631595132073662, guid: 2c1f60045e2f58f48966f8cea8354944, type: 3}
+      propertyPath: m_Name
+      value: Bank_prefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 4826099665648010, guid: 2c1f60045e2f58f48966f8cea8354944, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 529.98553
+      objectReference: {fileID: 0}
+    - target: {fileID: 4826099665648010, guid: 2c1f60045e2f58f48966f8cea8354944, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0100058615
+      objectReference: {fileID: 0}
+    - target: {fileID: 4826099665648010, guid: 2c1f60045e2f58f48966f8cea8354944, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 363.18942
+      objectReference: {fileID: 0}
+    - target: {fileID: 4826099665648010, guid: 2c1f60045e2f58f48966f8cea8354944, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4826099665648010, guid: 2c1f60045e2f58f48966f8cea8354944, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4826099665648010, guid: 2c1f60045e2f58f48966f8cea8354944, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4826099665648010, guid: 2c1f60045e2f58f48966f8cea8354944, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4826099665648010, guid: 2c1f60045e2f58f48966f8cea8354944, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4826099665648010, guid: 2c1f60045e2f58f48966f8cea8354944, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4826099665648010, guid: 2c1f60045e2f58f48966f8cea8354944, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2c1f60045e2f58f48966f8cea8354944, type: 3}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -838,8 +895,8 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1483991435}
   serializedVersion: 5
-  m_Mass: 2500
-  m_LinearDamping: 0
+  m_Mass: 2000
+  m_LinearDamping: 0.05
   m_AngularDamping: 2
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
@@ -906,8 +963,8 @@ WheelCollider:
   m_Center: {x: 0, y: 0, z: 0}
   m_Radius: 0.5
   m_SuspensionSpring:
-    spring: 35000
-    damper: 4500
+    spring: 40000
+    damper: 5000
     targetPosition: 0.5
   m_SuspensionDistance: 0.3
   m_ForceAppPointDistance: 0
@@ -920,11 +977,11 @@ WheelCollider:
     m_AsymptoteValue: 0.5
     m_Stiffness: 1
   m_SidewaysFriction:
-    m_ExtremumSlip: 0.2
-    m_ExtremumValue: 1
-    m_AsymptoteSlip: 0.5
-    m_AsymptoteValue: 0.75
-    m_Stiffness: 1
+    m_ExtremumSlip: 1
+    m_ExtremumValue: 2
+    m_AsymptoteSlip: 1
+    m_AsymptoteValue: 1
+    m_Stiffness: 2
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1392,3 +1449,4 @@ SceneRoots:
   - {fileID: 1081189913}
   - {fileID: 1816513492}
   - {fileID: 1098308620}
+  - {fileID: 784348342}

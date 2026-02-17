@@ -9,6 +9,14 @@ public class car : MonoBehaviour
     public float drivespeed, steerspeed;
     float horizontalInput, verticalInput;
 
+    Rigidbody rb;
+
+    void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+        rb.centerOfMass = new Vector3(0, -0.5f, 0);
+    }
+
     void Update()
     {
         horizontalInput = Input.GetAxis("Horizontal");

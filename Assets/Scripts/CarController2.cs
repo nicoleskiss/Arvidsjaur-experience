@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class CarController2 : MonoBehaviour
 {
+
+    Rigidbody rb;
+
     public WheelCollider frontLeft;
     public WheelCollider frontRight;
     public WheelCollider rearLeft;
@@ -20,6 +23,14 @@ public class CarController2 : MonoBehaviour
     float motorInput;
     bool brake;
 
+
+    void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+        rb.centerOfMass = new Vector3(0, -1f, 0);
+    }
+
+
     void Update()
     {
         steerInput = Input.GetAxis("Horizontal");
@@ -32,7 +43,13 @@ public class CarController2 : MonoBehaviour
         rearLeft.motorTorque = motorInput * motorPower;
         rearRight.motorTorque = motorInput * motorPower;
 
-        float steer = steerAngle * steerInput;
+        float speed = rb.linearVelocity.magnitude;
+        float currentSteerAngle = steerAngle * (1f - speed / 50f);
+        currentSteerAngle = Mathf.Clamp(currentSteerAngle, 10f, steerAngle);
+
+        float steer = currentSteerAngle * steerInput;
+
+
         frontLeft.steerAngle = steer;
         frontRight.steerAngle = steer;
 
